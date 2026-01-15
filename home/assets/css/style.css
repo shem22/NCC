@@ -1,0 +1,39 @@
+/* ==================================================
+   SHARED SITE STYLESHEET – NCC-OSAEC
+   Light Gray & Royal Blue Theme
+   ================================================== */
+
+/* ---------- Design Tokens ---------- */
+:root {
+  --royal-blue: #214a8c;
+  --royal-blue-light: #28579d;
+  --light-gray: #e7e7e7;
+  --text-dark: #1f2933;
+}
+
+/* Navbar */
+.ncc-navbar {
+  background: linear-gradient(to bottom, var(--royal-blue-light), var(--royal-blue));
+}
+
+/* Hero */
+.hero-section {
+  background: linear-gradient(rgba(33,74,140,0.85), rgba(33,74,140,0.85)),
+              url("https://via.placeholder.com/1600x600") center/cover no-repeat;
+  padding: 6rem 0;
+}
+
+/* Footer */
+.ncc-footer {
+  background-color: var(--light-gray);
+  border-top: 4px solid var(--royal-blue);
+}
+
+.ncc-footer a {
+  color: var(--royal-blue);
+  text-decoration: none;
+}
+
+.ncc-footer a:hover {
+  text-decoration: underline;
+}
