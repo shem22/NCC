@@ -25,6 +25,7 @@
 
 /* Footer */
 .ncc-footer {
+  flex-shrink: 0; /* Prevents the footer from squishing */
   background-color: var(--light-gray);
   border-top: 4px solid var(--royal-blue);
 }
@@ -36,4 +37,19 @@
 
 .ncc-footer a:hover {
   text-decoration: underline;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Takes up at least the full screen height */
+}
+
+main {
+  flex: 1 0 auto; /* This pushes the footer down by taking up all available space */
 }
